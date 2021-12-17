@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  EntryPoint.swift
 //  diavirt
 //
 //  Created by Alex Zenla on 12/13/21.
@@ -9,7 +9,6 @@ import ArgumentParser
 import Foundation
 import Virtualization
 
-@main
 struct DiavirtCommand: ParsableCommand {
     static var configuration = CommandConfiguration(
         commandName: "diavirt",

@@ -8,6 +8,7 @@
 import Foundation
 import Virtualization
 
+#if arch(arm64)
 extension VZMacOSRestoreImage {
     static func fetchLatestSupported() async throws -> VZMacOSRestoreImage {
         try await withUnsafeThrowingContinuation { continuation in
@@ -25,3 +26,4 @@ extension VZMacOSRestoreImage {
         }
     }
 }
+#endif
